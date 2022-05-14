@@ -14,21 +14,19 @@ function index() {
 				<Image src={insta} />
 				<TextField size="small" id="outlined-basic" margin="dense" label="Email" variant="outlined" fullWidth />
 				<TextField size="small" id="outlined-basic" type="password" margin="dense" label="Password" variant="outlined" fullWidth />
-				<TextField size="small" id="outlined-basic" margin="dense" label="Full Name" variant="outlined" fullWidth />
-				<Button variant="outlined" component="label" fullWidth style={{ marginTop: '1rem' }}>
-					<input type="file" accept="image/*" style={{ display: 'none' }} />
-					Upload
-				</Button>
 
+				<div style={{ color: 'red' }}> Error Yahan Ayega</div>
 				<Button variant="contained" component="span" fullWidth style={{ marginTop: '1rem' }}>
 
-					Sign Up
+					Login In
 				</Button>
+				<div style={{ color: 'blue',marginTop:'0.5rem' }}> Forget Password ?</div>
+
 
 			</div>
 
 			<div className='bottom-card'>
-			Already Have an Account ? <span style={{color:"blue"}}> Login</span>
+				Don't Have an Account ? <span style={{ color: "blue" }}> Sign Up</span>
 			</div>
 
 		</div>
