@@ -15,19 +15,20 @@ function index() {
 				<TextField size="small" id="outlined-basic" margin="dense" label="Email" variant="outlined" fullWidth />
 				<TextField size="small" id="outlined-basic" type="password" margin="dense" label="Password" variant="outlined" fullWidth />
 				<TextField size="small" id="outlined-basic" margin="dense" label="Full Name" variant="outlined" fullWidth />
-				<Button variant="outlined" component="label" fullWidth style={{marginTop:'1rem'}}>
-					<input type="file" accept="image/*" style={{display:'none'}}/>
+				<Button variant="outlined" component="label" fullWidth style={{ marginTop: '1rem' }}>
+					<input type="file" accept="image/*" style={{ display: 'none' }} />
 					Upload
 				</Button>
 
-				<Button variant="contained" component="span" fullWidth style={{marginTop:'1rem'}}>
-					
+				<Button variant="contained" component="span" fullWidth style={{ marginTop: '1rem' }}>
+
 					Sign Up
 				</Button>
 
 			</div>
 
-			<div>
+			<div className='bottom-card'>
+			Already Have an Account ? <span style={{color:"blue"}}> Login</span>
 			</div>
 
 		</div>
