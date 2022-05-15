@@ -4,7 +4,7 @@
 	align-items: center;
 	margin-top: 8rem;
 	text-align: center;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .login-card{
@@ -19,6 +19,13 @@
 	margin-top: 1rem;
 	padding: 1rem;
 	border: 1px solid #ccc;
+}
+
+.carbg{
+	background: url('../assets/carbg.jpg');
+	background-size: cover;
+	height: 590px;
+	width: 441px;
 }
 
 @media only screen and (max-width:620px){
