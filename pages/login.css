@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content:center ;
 	align-items: center;
-	margin-top: 8rem;
+	margin-top: 7rem;
 	text-align: center;
 	flex-direction: row;
 }
@@ -38,12 +38,34 @@
 
 }
 
-@media only screen and (max-width:620px){
+@media only screen and (max-width:500px){
 	.login-card{
 		width: 100%;
 	}
 
 	.bottom-card{
 		width: 100%;
+	}
+
+	.carbg{
+		display: none;
+	}
+}
+
+@media only screen and (max-width:800px){
+	.login-card{
+		width: 15rem;
+	}
+
+	.bottom-card{
+		width: 15rem;
+	}
+
+}
+
+@media only screen and (max-width:700px){
+
+	.carbg{
+		display: none;
 	}
 }
