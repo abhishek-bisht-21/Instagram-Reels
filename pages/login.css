@@ -26,6 +26,16 @@
 	background-size: cover;
 	height: 590px;
 	width: 441px;
+	position: relative;
+}
+
+.car{
+	position: absolute;
+	height: 423px;
+	width: 241px;
+	top: 93px;
+	left: 143px;
+
 }
 
 @media only screen and (max-width:620px){

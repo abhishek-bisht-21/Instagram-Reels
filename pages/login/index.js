@@ -5,8 +5,14 @@ import Image from 'next/image'
 import insta from '../../assets/insta.jpg'
 import Button from '@mui/material/Button';
 // Carousel
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import { Carousel } from 'react-responsive-carousel';
+// Importing Images
+import bg1 from '../../assets/bg1.jpg'
+import bg2 from '../../assets/bg2.jpg'
+import bg3 from '../../assets/bg3.jpg'
+
+
+
 // Routinmg is Handled by NextJS itself
 function index() {
 	return (
@@ -15,17 +21,19 @@ function index() {
 
 			<div className="carbg">
 				<div className='car'>
-					<CarouselProvider
-						naturalSlideWidth={100}
-						naturalSlideHeight={125}
-						totalSlides={3}
-					>
-						<Slider>
-							<Slide index={0}>I am the first Slide.</Slide>
-							<Slide index={1}>I am the second Slide.</Slide>
-							<Slide index={2}>I am the third Slide.</Slide>
-						</Slider>
-					</CarouselProvider>
+					<Carousel
+						showIndicators={false}
+						showArrows={false}
+						showThumbs={false}
+						infiniteLoop={true}
+						showStatus={false}
+						interval={1400}
+						autoPlay={true}>
+						<Image src={bg1}></Image>
+						<Image src={bg2}></Image>
+						<Image src={bg3}></Image>
+
+					</Carousel>
 
 				</div>
 
